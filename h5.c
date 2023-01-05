@@ -34,7 +34,7 @@ void replaceWord(char frase[], char p1[], char p2[])
     sizep2 = countCaracter(p2);
     next_word_end_position = positionWord(frase, p1, 0); //posicao do caractere apos a palavra
 
-    do
+    while(next_word_end_position != -1)
     {
         if(sizep1 < sizep2)
         {
@@ -63,7 +63,7 @@ void replaceWord(char frase[], char p1[], char p2[])
             count --;
         }
         next_word_end_position = positionWord(frase, p1, next_word_end_position+deslocamento);
-    }while(next_word_end_position != -1);
+    }
 }
 
 int countCaracter(char str[41]) // editar depois
