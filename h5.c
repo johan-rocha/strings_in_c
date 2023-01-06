@@ -32,6 +32,8 @@ void replaceWord(char phrase[], char text_word[], char to_replace_word[])
     int count = 0;
     for(int i=0; phrase[i] != '\0'; i++)
     {
+        if(count >= size_text_word)
+            count = 0;
         if (phrase[i] == text_word[count])
         {
             count++;
