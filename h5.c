@@ -65,6 +65,7 @@ void replaceWord(char phrase[], char text_word[], char to_replace_word[])
                     count2--;
                 }
                 size_phrase = countCaracter(phrase); //o tamanho da frase vai alterando
+                i += desloc; //compensa o deslocamento na frase
             }
         }
         else
